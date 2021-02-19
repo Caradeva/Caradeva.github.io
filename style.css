@@ -1,0 +1,91 @@
+/*
+Let me know if you have any questions! :)
+
+Want some borders? Add this somewhere
+
+    border:2px; #How wide it will be, in this case, it is 2px
+    border-style: solid; #You can make it dashed, thin, etc.
+    border-color:black; #Border colour
+
+    More about borders: https://www.w3schools.com/css/css_border.asp
+
+*/
+
+body {
+    background-image: radial-gradient( circle farthest-corner at -2.6% 51.8%,  rgba(24,9,181,1) 0%, rgba(0,127,189,1) 90% );
+    /*Don't know how to code gradients? That's ok!
+    Go to: https://cssgradient.io/gradient-backgrounds/
+    for some pre-coded ones
+    */
+}
+
+.profile_picture {
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    display:block;
+    margin:0 auto;
+
+    position: relative; /*Allows something to be moved around*/
+    top:60px; /*Pushes it down from the top by 60px*/
+}
+
+.myname {
+    color:white;
+    text-align:center;
+    
+    position: relative; /*Allows something to be moved around*/
+    top:60px; /*Pushes it down from the top by 60px*/
+}
+
+.button {
+    background: red;
+    width: 400px;
+    height:60px; /*Makes it's value the same as the text line height, so that is is vertically aligned*/
+    margin:0 auto; /*Centers the container*/
+    border-radius: 10px;
+    
+    position: relative; /*Allows something to be moved around*/
+    top:60px; /*Pushes it down from the top by 60px*/
+
+    margin-top:15px;
+
+    transition: 0.4s; /*Takes 0.4 seconds to transition*/
+}
+
+.button:hover {
+    background: #45ee32;
+}
+
+.hyperlink_text {
+    color:white;
+    display:block;
+    text-align:center;
+    text-decoration: none; /*Removes the underline*/
+    font-size: 18px;
+
+    line-height:60px; /*Makes it's value the same as the button height, so that is is vertically aligned*/
+}
+
+.small {
+   background:blueviolet;
+    width: 400px;
+    height:60px; /*Makes it's value the same as the text line height, so that is is vertically aligned*/
+    margin:0 auto; /*Centers the container*/
+    border-radius: 10px;
+    
+    position: relative; /*Allows something to be moved around*/
+    top:60px; /*Pushes it down from the top by 60px*/
+
+    margin-top:15px;
+
+    transition: 0.4s; /*Takes 0.4 seconds to transition*/
+}
+
+.small:hover {
+  background: blanchedalmond;
+}
+
+.small , hyperlink_text:hover {
+    text-color:black;
+}
